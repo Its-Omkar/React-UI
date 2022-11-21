@@ -1,38 +1,286 @@
-.App {
-  text-align: center;
+body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  /* margin-left: 20px; */
+  /* height: 100vh;
+  width:100vw; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background{
+  background-color: #242424;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header{
+  padding-left: 30px;
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+
+
+}
+.icons>img{
+  margin: 20px;
+  margin-right: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+
+}
+
+
+.header>h2{
+  font-size: 30px;
+  margin-top: 10px;
+  
+  /* margin-bottom: 5px; */
+  margin-right: auto;
+  color: white;
+}
+.main-conatiner{
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 50px;
+  
+}
+
+.main-conatiner>h2{
+  margin-top: 0px;
+  margin-left: 30px;
+  color: white;
+
+}
+.toggle-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle{
+  display: flex;
+  height: 40px;
+  width: 300px;
+  background-color: #242424 ;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.style{
+  color: white;
+  padding: 5px;
+}
+
+.discover{
+  display: flex;
+  height: 70%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+
+  
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.explore{
+  display: flex;
+  height: 70%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+
+  
+  margin-right: auto;
+  border-radius: 50px;
+}
+.selected{
+  background-color: #29fd53;
+}
+
+.story-main-container{
+  display: flex;
+  
+  margin-bottom: 20px;
+  margin-left: 30px;
+  white-space: nowrap;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding: auto;
+  /* margin: auto; */
+  cursor: grab;
+}
+.story-main-container::-webkit-scrollbar{
+  display: none;
+}
+
+.story-container{
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  padding: 10px;
+  /* background-color: red; */
+  height: 200px;
+  min-width: 120px;
+
+  border-radius: 25px;
+}
+.story-image{
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+
+.story-image>img{
+  margin: 0px;
+  padding: 0px;
+  height:150px ;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.story-footer{
+  margin-top: -5px;
+  height:50px;
+  width: 100%;
+  background: #242424;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  flex-direction: column;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.story-footer-details{
+  margin: 0px;
+  padding: 0px;
+}
+
+.story-footer-detail>h5{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+.postCard-holder{
+ 
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 15px;
+  /* padding: x; */
+  /* margin-right: 20px; */
+  
+  
+}
+
+
+
+
+
+.post-container{
+
+  height: 400px;
+  width: 300px;
+  background-color: #242424;
+  border-radius: 25px;
+  margin: 10px 20px 20px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* margin-right: 30px; */
+  
+}
+
+.post-header{
+  display: flex;
+  padding-top: 15px;
+  align-items: center;
+  justify-content:center ;
+  height: 30px;
+  width: 100%;
+
+}
+
+.post-image{
+    margin: 5px;
+    margin-top: 10px;
+    
+}
+
+.post-image>img{
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  
+}
+
+.details>h3{
+  margin: 0px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.details>h5{
+  margin: 0px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-header>img{
+  width:40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
 }
+
+.likeComment{
+  color:#383838;
+}
+
+.likeComment-container{
+  background-color: #242424;
+  margin-left:10px;
+}
+
+.likeComment-container>h10,h9{
+  color: white;
+}
+
+.likeComment-container>h9{
+  margin-right:5px ;
+}
+
+
+.footer{
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  background-color: #242424;
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  /* padding-left: 50px; */
+}
+
+h5{
+  margin: 0px;
+  padding: 0px;
+}
+
+
